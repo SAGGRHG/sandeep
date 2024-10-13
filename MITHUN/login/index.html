@@ -1,0 +1,53 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithun Creation - Login & Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<?php
+
+include("db.php");
+
+?>
+
+
+    <div class="container">
+        <div class="form-container">
+            <!-- Login Form -->
+            <div class="form" id="login-form">
+                <h2>Login</h2>
+                <form action="login.php" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <p>Don't have an account? <span id="to-signup">Sign up here</span></p>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="form" id="signup-form">
+                <h2>Signup</h2>
+                <form action="signup.php" method="POST">
+                    <input type="text" name="name" placeholder="Enter your full name" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="password" name="password" placeholder="Create a password" required>
+                    <button type="submit" class="btn">Signup</button>
+                </form>
+                <p>Already have an account? <span id="to-login">Login here</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

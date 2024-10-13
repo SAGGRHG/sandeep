@@ -1,0 +1,80 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: none;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.form.active {
+    display: block;
+    opacity: 1;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff8c1a;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+span {
+    color: #ff6600;
+    cursor: pointer;
+}
+
+span:hover {
+    text-decoration: underline;
+}
